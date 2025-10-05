@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_detail"
-        android:title="View Payment Details"
+        android:title="@string/menu_details"
         android:showAsAction="never" />
 </menu>

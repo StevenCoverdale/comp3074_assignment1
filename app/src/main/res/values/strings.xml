@@ -9,4 +9,10 @@
     <string name="tax">Tax: $0.00</string>
     <string name="view_payment_details">View Payment Details</string>
     <string name="payment_logger">Payment Logger</string>
+    <string name="menu_details">View Payment Details</string>
+    <string name="empty_payments">No payments yet. Go back and calculate one.</string>
+    <string name="label_pay">Pay: %1$s</string>
+    <string name="label_overtime">Overtime: %1$s</string>
+    <string name="label_total">Total: %1$s</string>
+    <string name="label_tax">Tax: %1$s</string>
 </resources>
