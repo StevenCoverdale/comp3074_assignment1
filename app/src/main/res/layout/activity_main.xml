@@ -96,14 +96,5 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnViewDetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/view_payment_details"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="34dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
