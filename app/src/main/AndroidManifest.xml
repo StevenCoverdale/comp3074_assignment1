@@ -26,6 +26,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+        <meta-data
+            android:name="app_author"
+            android:value="Steven and David - Assignment 1 F2025" />
 
     </application>
 
