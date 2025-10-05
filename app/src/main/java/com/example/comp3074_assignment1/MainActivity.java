@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
             textTotal.setText("Total: $" + total);
             textTax.setText("Tax: $" + tax);
 
+            Payment p = new Payment(hours, rate, pay, overtime, total, tax);
+            PaymentRepo.PAYMENTS.add(p);
+
             Toast.makeText(this, "Calculation successful", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Toast.makeText(this, "Invalid input", Toast.LENGTH_SHORT).show();
