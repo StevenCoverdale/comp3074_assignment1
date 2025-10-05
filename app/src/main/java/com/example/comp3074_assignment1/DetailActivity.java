@@ -1,4 +1,6 @@
 package com.example.comp3074_assignment1;
 
-public class DetailActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DetailActivity extends AppCompatActivity {
 }
