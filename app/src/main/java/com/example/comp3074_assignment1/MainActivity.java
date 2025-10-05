@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculatePay() {
+        java.text.NumberFormat c = java.text.NumberFormat.getCurrencyInstance(java.util.Locale.CANADA);
         try {
             double hours = Double.parseDouble(editHours.getText().toString());
             double rate = Double.parseDouble(editRate.getText().toString());
@@ -53,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
             total = pay + overtime;
             tax = total * 0.18;
 
-            textPay.setText("Pay: $" + pay);
-            textOvertime.setText("Overtime: $" + overtime);
-            textTotal.setText("Total: $" + total);
-            textTax.setText("Tax: $" + tax);
+            textPay.setText("Pay: " + c.format(pay));
+            textOvertime.setText("Overtime: " + c.format(overtime));
+            textTotal.setText("Total: " + c.format(total));
+            textTax.setText("Tax: " + c.format(tax));
 
             Payment p = new Payment(hours, rate, pay, overtime, total, tax);
             PaymentRepo.PAYMENTS.add(p);
